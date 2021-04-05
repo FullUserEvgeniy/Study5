@@ -11,7 +11,7 @@ class MyThread extends Thread{
                 System.out.println(getName()+", счетчик: "+count);
             }
         }catch (InterruptedException exc) {
-            System.out.println(getName()+" прерван на 400 мсек.");
+            System.out.println(getName()+" прерван на 700 мсек.");
         }
         show();
     }
@@ -30,7 +30,7 @@ public class Main {
             try {
                 Thread.sleep(200);
             }catch (InterruptedException exc){
-                System.out.println("Прерывание основного потока на 100 мсек.");
+                System.out.println("Прерывание основного потока на 200 мсек.");
             }
         }
         System.out.println("Завершение работы основного потока");
